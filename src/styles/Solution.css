@@ -1,0 +1,31 @@
+.solution {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--bg-dark);
+    text-align: center;
+}
+
+.cycle-description {
+    margin: var(--spacing-xl) 0;
+}
+
+.cycle-description p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.8;
+}
+
+.cycle-problem {
+    color: var(--text-red);
+    font-weight: 700;
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+}
+
+.solution-content {
+    margin-top: var(--spacing-xl);
+}
+
+.solution-title {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    color: var(--primary-green);
+    margin-bottom: var(--spacing-md);
+}
