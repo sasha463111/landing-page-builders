@@ -8,8 +8,14 @@ function About() {
         <h2 className="section-title">נעים מאוד,</h2>
         <div className="about-content">
           <div className="about-image">
-            {/* תמונה עם חיוך יזין - placeholder */}
-            <div className="image-placeholder">תמונה</div>
+            <img 
+              src="/sasha-dibka.jpg" 
+              alt="סשה דיבקה" 
+              className="sasha-image"
+              onError={(e) => {
+                e.target.src = 'https://via.placeholder.com/300x300/34D399/ffffff?text=סשה+דיבקה';
+              }}
+            />
           </div>
           <div className="about-text">
             <p className="about-name">נעים מאוד, סשה דיבקה, יזם, ואיש אוטומציה,</p>

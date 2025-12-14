@@ -1,6 +1,6 @@
 .process {
     padding: var(--spacing-xxl) 0;
-    background-color: var(--bg-black);
+    background-color: var(--bg-section);
 }
 
 .process-steps {
@@ -11,11 +11,18 @@
 }
 
 .step {
-    background-color: var(--bg-dark);
+    background-color: var(--bg-light);
     padding: var(--spacing-xl);
     border-radius: 12px;
-    border: 1px solid var(--primary-green);
+    border: 2px solid var(--primary-green);
     text-align: center;
+    box-shadow: 0 4px 16px rgba(52, 211, 153, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(52, 211, 153, 0.25);
 }
 
 .step-number {

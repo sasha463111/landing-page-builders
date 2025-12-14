@@ -1,6 +1,6 @@
 .about {
     padding: var(--spacing-xxl) 0;
-    background-color: var(--bg-black);
+    background-color: var(--bg-light);
 }
 
 .about-content {
@@ -13,18 +13,20 @@
     margin-bottom: var(--spacing-xl);
 }
 
-.image-placeholder {
-    width: 200px;
-    height: 200px;
-    background-color: var(--bg-dark);
-    border: 3px solid var(--primary-green);
+.sasha-image {
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid var(--primary-green);
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--primary-green);
-    font-weight: 500;
+    display: block;
+    box-shadow: 0 8px 24px rgba(52, 211, 153, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.sasha-image:hover {
+    transform: scale(1.05);
 }
 
 .about-text {

@@ -1,15 +1,16 @@
 .contact {
     padding: var(--spacing-xxl) 0;
-    background-color: var(--bg-dark);
+    background-color: var(--bg-light);
 }
 
 .contact-form {
     max-width: 600px;
     margin: var(--spacing-xl) auto;
-    background-color: var(--bg-black);
+    background-color: var(--bg-section);
     padding: var(--spacing-xl);
-    border-radius: 12px;
-    border: 1px solid var(--primary-green);
+    border-radius: 16px;
+    border: 2px solid var(--primary-green);
+    box-shadow: 0 8px 24px rgba(52, 211, 153, 0.2);
 }
 
 .form-group {
@@ -20,13 +21,18 @@
 .form-group textarea {
     width: 100%;
     padding: var(--spacing-md);
-    background-color: var(--bg-dark);
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--bg-light);
+    border: 2px solid var(--border-gray);
     border-radius: 8px;
-    color: var(--text-white);
+    color: var(--text-dark);
     font-family: 'Heebo', sans-serif;
     font-size: 1rem;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.1);
 }
 
 .form-group input:focus,

@@ -1,6 +1,6 @@
 .solution {
     padding: var(--spacing-xxl) 0;
-    background-color: var(--bg-dark);
+    background-color: var(--bg-light);
     text-align: center;
 }
 

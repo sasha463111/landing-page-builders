@@ -1,6 +1,6 @@
 .problem {
     padding: var(--spacing-xxl) 0;
-    background-color: var(--bg-dark);
+    background-color: var(--bg-section);
 }
 
 .problem-list {
@@ -8,11 +8,12 @@
 }
 
 .problem-item {
-    background-color: var(--bg-black);
+    background-color: var(--bg-light);
     padding: var(--spacing-md);
     margin-bottom: var(--spacing-md);
     border-right: 4px solid var(--text-red);
     border-radius: 8px;
+    border: 1px solid var(--border-gray);
 }
 
 .problem-item p {
