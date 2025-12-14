@@ -75,6 +75,20 @@ a:hover {
     opacity: 0.8;
 }
 
+/* Ensure all text elements have proper color */
+p, span, div, li {
+    color: var(--text-dark);
+}
+
+/* Text color utilities */
+.text-white {
+    color: var(--text-white) !important;
+}
+
+.text-dark {
+    color: var(--text-dark) !important;
+}
+
 /* ============================================
    Buttons
    ============================================ */
