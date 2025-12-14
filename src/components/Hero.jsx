@@ -3,14 +3,44 @@ import InfiniteWheel from './InfiniteWheel'
 import '../styles/Hero.css'
 
 function Hero() {
-  const positiveItems = ['✓ לידים חמים', '✓ תקציב יעיל', '✓ תוצאות מיידיות', '✓ גידול יציב', '✓ מעקב מלא', '✓ החלטות מבוססות נתונים', '✓ אוטומציה חכמה', '✓ שיפור מתמיד']
-  const negativeItems = ['✗ לידים קרים', '✗ תקציב שנעלם', '✗ ללא תוצאות', '✗ עלויות גבוהות', '✗ חוסר סדר', '✗ נתונים לא מדויקים', '✗ עבודה ידנית', '✗ תקיעות']
+  // מידע מה-PDF - הבעיות והפתרונות
+  const negativeItems = [
+    '✗ בלאגן וחוסר סדר',
+    '✗ סירבול במציאת מידע על ליד',
+    '✗ הופך טבלאות שיטס',
+    '✗ מאבד לקוחות שרוצים להתקדם',
+    '✗ לא רואה תמונה גדולה',
+    '✗ החלטות מבוססות נתונים שגויים',
+    '✗ לידים קרים שלא נסגרים',
+    '✗ תקציב שיווק שנעלם'
+  ]
+  
+  const positiveItems = [
+    '✓ מעקב מסודר אחרי לידים',
+    '✓ מעקב מהקמפיין עד הסגירה',
+    '✓ תקשורת יעילה עם לידים',
+    '✓ ניהול לקוחות מסודר',
+    '✓ רואה תמונה גדולה',
+    '✓ החלטות מבוססות נתונים נכונים',
+    '✓ אוטומציה טכנולוגית',
+    '✓ צמיחה יציבה'
+  ]
 
   return (
     <section className="hero">
       <div className="container">
         <div className="hero-logo">
-          <img src="/logo-builders.png" alt="Builders Logo" className="builders-logo" onError={(e) => { e.target.style.display = 'none'; }} />
+          <img 
+            src="/logo-builders.png" 
+            alt="Builders Logo" 
+            className="builders-logo" 
+            onError={(e) => { 
+              e.target.src = '/logo-builders.jpg';
+              e.target.onerror = () => {
+                e.target.style.display = 'none';
+              };
+            }} 
+          />
         </div>
         
         <p className="hero-subtitle">
@@ -45,23 +75,28 @@ function Hero() {
           <h3 className="clients-title">לקוחות שצמחו איתנו:</h3>
           <div className="clients-grid">
             <div className="client-item">
-              <img src="https://via.placeholder.com/120x120/34D399/ffffff?text=עומרי+כהן" alt="עומרי כהן" className="client-image" />
+              <img src="/clients/omri-cohen.jpg" alt="עומרי כהן" className="client-image" 
+                onError={(e) => e.target.src = '/clients/omri-cohen.png'} />
               <p className="client-name">עומרי כהן</p>
             </div>
             <div className="client-item">
-              <img src="https://via.placeholder.com/120x120/34D399/ffffff?text=מתן+ניסטור" alt="מתן ניסטור" className="client-image" />
+              <img src="/clients/matan-nistor.jpg" alt="מתן ניסטור" className="client-image"
+                onError={(e) => e.target.src = '/clients/matan-nistor.png'} />
               <p className="client-name">מתן ניסטור</p>
             </div>
             <div className="client-item">
-              <img src="https://via.placeholder.com/120x120/34D399/ffffff?text=קבוצת+בסר" alt="קבוצת בסר" className="client-image" />
+              <img src="/clients/baser-group.jpg" alt="קבוצת בסר" className="client-image"
+                onError={(e) => e.target.src = '/clients/baser-group.png'} />
               <p className="client-name">קבוצת בסר</p>
             </div>
             <div className="client-item">
-              <img src="https://via.placeholder.com/120x120/34D399/ffffff?text=דניאל+מולדבסקי" alt="דניאל מולדבסקי" className="client-image" />
+              <img src="/clients/daniel-moldavsky.jpg" alt="דניאל מולדבסקי" className="client-image"
+                onError={(e) => e.target.src = '/clients/daniel-moldavsky.png'} />
               <p className="client-name">דניאל מולדבסקי</p>
             </div>
             <div className="client-item">
-              <img src="https://via.placeholder.com/120x120/34D399/ffffff?text=עורך+דין+אילן" alt="עורך דין אילן" className="client-image" />
+              <img src="/clients/lawyer-ilan.jpg" alt="עורך דין אילן" className="client-image"
+                onError={(e) => e.target.src = '/clients/lawyer-ilan.png'} />
               <p className="client-name">עורך דין אילן</p>
             </div>
           </div>

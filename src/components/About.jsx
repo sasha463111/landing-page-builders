@@ -13,7 +13,10 @@ function About() {
               alt="סשה דיבקה" 
               className="sasha-image"
               onError={(e) => {
-                e.target.src = 'https://via.placeholder.com/300x300/34D399/ffffff?text=סשה+דיבקה';
+                e.target.src = '/sasha-dibka.png';
+                e.target.onerror = () => {
+                  e.target.src = 'https://via.placeholder.com/300x300/34D399/ffffff?text=סשה+דיבקה';
+                };
               }}
             />
           </div>
